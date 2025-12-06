@@ -1,0 +1,16 @@
+{
+  "domain": "jiosaavn",
+  "name": "JioSaavn",
+  "version": "1.0.0",
+  "description": "Stream music from JioSaavn via custom API. Songs, Artists, Albums, Playlists, Radio and recommended songs are supported. (Needs JioSaavn custom API)",
+  "documentation": "https://github.com/sumitkolhe/jiosaavn-api",
+  "requirements": [
+    "pydantic",
+    "async_timeout"
+  ],
+  "icon": "mdi:music-circle",
+  "type": "music",
+  "dependencies": [],
+  "config_entries": [],
+  "codeowners": ["@your_github_username"]
+}
