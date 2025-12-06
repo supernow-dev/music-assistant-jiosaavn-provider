@@ -34,6 +34,7 @@ It supports all APIs of the unofficial JioSaavn API, i.e.
    > 
 5. Run the following command to start the container. (optionally create a docker-compose file with the following configuration)
     > docker run -d --name music-assistant-jiosaavn --network host --cap-add=DAC_READ_SEARCH --cap-add=SYS_ADMIN --security-opt apparmor:unconfirmed -v `<host-data-folder>`:/data  supernow/music-assistant-jiosaavn:0.1.0
+    > 
     <sub>Replace `<host-data-folder>` with a folder from host.</sub>
     
 
