@@ -18,9 +18,9 @@ It supports all APIs of the unofficial JioSaavn API, i.e.
 **Prerequisite**: An instance of unofficial JioSaavn API is required either hosted locally or in cloud.
 
 ### Running it from a pre-built Docker image
-> docker run -d --name music-assistant-jiosaavn --network host --cap-add=DAC_READ_SEARCH --cap-add=SYS_ADMIN --security-opt apparmor:unconfirmed -v <host-data-folder>:/data  supernow/music-assistant-jiosaavn:0.1.0
+> docker run -d --name music-assistant-jiosaavn --network host --cap-add=DAC_READ_SEARCH --cap-add=SYS_ADMIN --security-opt apparmor:unconfirmed -v `<host-data-folder>`:/data  supernow/music-assistant-jiosaavn:0.1.0
 
-<sub>Replace <host-data-folder> with a folder from host.</sub>
+<sub>Replace `<host-data-folder>` with a folder from host.</sub>
 
 ### Building from source
 1. Clone the [Music Assistant server](https://github.com/music-assistant/server) repository. (tested with release 2.6.3)
@@ -33,7 +33,8 @@ It supports all APIs of the unofficial JioSaavn API, i.e.
     > docker build -t supernow/music-assistant-jiosaavn:0.1.0 .
    > 
 5. Run the following command to start the container. (optionally create a docker-compose file with the following configuration)
-    > docker run -d --name music-assistant-jiosaavn --network host --cap-add=DAC_READ_SEARCH --cap-add=SYS_ADMIN --security-opt apparmor:unconfirmed -v <host-data-folder>:/data  supernow/music-assistant-jiosaavn:0.1.0
+    > docker run -d --name music-assistant-jiosaavn --network host --cap-add=DAC_READ_SEARCH --cap-add=SYS_ADMIN --security-opt apparmor:unconfirmed -v `<host-data-folder>`:/data  supernow/music-assistant-jiosaavn:0.1.0
+    <sub>Replace `<host-data-folder>` with a folder from host.</sub>
     
 
 ### Usage
